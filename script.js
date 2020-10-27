@@ -3,19 +3,31 @@ let input = document.getElementById("input");
 
 let currentScene;
 
+
+
+
 function submit() {
-    console.log(input.value)
-    if(input.value === "yes" && currentScene == 1){
-        console.log(senario.two)
-        sceneTwo(senario.two)
-    };
+    let answer = input.value.toLowerCase();
+    console.log(answer)
     
-    if(input.value === "run away" && currentScene == 2) {
-        sceneFour(senario.four)
+    
+    const scene1 = scenario[currentScene]
+    console.log(scene1)
+    for(const option of scene1.option1) 
+
+    if(answer === option){
+        console.log(scenario.two)
+        showSceneTwo(scenario.two)
+    };
+    const scene2 = scenario[currentScene]
+    for(option of scene2.option1)
+    if(answer === option) {
+        showSceneFour(scenario.four)
     }
     
-    else if(input.value === "check it out" && currentScene == 2){
-        sceneThree(senario.three)
+    for(option of scene2.option2)
+    if(answer === option){
+        showSceneThree(scenario.three)
     };
     
     input.value = "";
@@ -29,44 +41,46 @@ input.addEventListener("keydown", function(event) {
     }
   });
 
-let sceneOne = function(senarios) {
-    currentScene = 1;
-    changeText(senarios.text)
+let showSceneOne = function(scenarios) {
+    currentScene = "one";
+    changeText(scenarios.text)
 }
 
-let sceneTwo = function(senarios) {
-    currentScene = 2;
-    changeText(senarios.text)
+let showSceneTwo = function(scenarios) {
+    currentScene = "two";
+    changeText(scenarios.text)
 }
 
-let sceneThree = function(senarios) {
-    currentScene = 3;
-    changeText(senarios.text)
+let showSceneThree = function(scenarios) {
+    currentScene = "three";
+    changeText(scenarios.text)
 }
 
-let sceneFour = function(senarios) {
-    currentScene = 4;
-    changeText(senarios.text)
+let showSceneFour = function(scenarios) {
+    currentScene = "four";
+    changeText(scenarios.text)
 }
 
 
-// let advanceTo = function(senarios) {
-//     changeText(senarios.text)
-// };
+
 
 let changeText = function(words) {
     text.innerHTML = words
 }
 
-let senario = {
+
+
+let scenario = {
     one: {
         text: "Hello and welcome to the text adventure game. Would you like to start the game?",
-        option1: ["yes", "Yes", "yeah"],
+        option1: ["yes", "yeah"],
         
     },
 
     two: {
-        text: "You are lost in the woods and you hear someone screeming. Waht do you do?  Run away or check it out?",
+        text: "You are lost in the woods and you hear someone screaming. What do you do?  Run away or check it out?",
+        option1: ["run away", "run"],
+        option2: ["check it out", "check", "check it"],
     },
 
     three: {
@@ -74,12 +88,13 @@ let senario = {
     },
    
     four: {
-        text: "You run so fast until you triped and sprined your leg",
+        text: "You run so fast until you tripped and sprained your leg",
     },
 }
 
 
 
-// advanceTo(senario.one);
-sceneOne(senario.one);
+
+showSceneOne(scenario.one);
+
 
