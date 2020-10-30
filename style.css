@@ -17,10 +17,23 @@ body {
     width: 50%;
     text-align: center;
     padding: 1rem;
+    animation: fadein 1s;
 }
 
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
 input {
-    width: 15rem;
+    width: 16rem;
+    border: none;
+    /*border-bottom: 2px solid #39FF14;*/
+    background-color: black;
+    color: #39FF14;
+    font-family: monospace;
+    outline: none;
 }
 
 #btn {

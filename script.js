@@ -5,28 +5,30 @@ let currentScene;
 
 
 
-
+/** Submits input value on a button click */
 function submit() {
+    /** sets input value to lower case */
     let answer = input.value.toLowerCase();
     console.log(answer)
     
-    
+    /** Sets shown scenario to current scene */
     const scene1 = scenario[currentScene]
     console.log(scene1)
-    for(const option of scene1.option1) 
-
-    if(answer === option){
+    /** Loops option1 from scenario one */
+    for(const option1FromScenarioOne of scene1.option1) 
+    /** Checks if input value (answer) is one of the options from scenario.one.option1 */
+    if(answer === option1FromScenarioOne){
         console.log(scenario.two)
         showSceneTwo(scenario.two)
     };
     const scene2 = scenario[currentScene]
-    for(option of scene2.option1)
-    if(answer === option) {
+    for(option1FromScenarioTwo of scene2.option1)
+    if(answer === option1FromScenarioTwo) {
         showSceneFour(scenario.four)
     }
     
-    for(option of scene2.option2)
-    if(answer === option){
+    for(option2FromScenarioTwo of scene2.option2)
+    if(answer === option2FromScenarioTwo){
         showSceneThree(scenario.three)
     };
     
@@ -34,13 +36,20 @@ function submit() {
     
 };
 
+/** Clicks button with Enter key */
 input.addEventListener("keydown", function(event) {
     if (event.keyCode == 13) {
      event.preventDefault();
      document.getElementById("btn").click();
     }
-  });
+});
 
+/** Displays the scenario
+ * @param {Object} scenario - contains scenarios
+ * @param {Object} scenario.one - scenario of possible scenarios
+ * @param {string} scenario.one.text - scenario text, which is displayed on the screen
+ * @param {string[]} scenario.one.option1 - scenario options
+ */
 let showSceneOne = function(scenarios) {
     currentScene = "one";
     changeText(scenarios.text)
@@ -63,7 +72,9 @@ let showSceneFour = function(scenarios) {
 
 
 
-
+/** Displays text in the website 
+ * @param {string} words
+*/
 let changeText = function(words) {
     text.innerHTML = words
 }
@@ -94,7 +105,7 @@ let scenario = {
 
 
 
-
+/** Starts the SceneOne, which is scenario one, on the page load */
 showSceneOne(scenario.one);
 
 
