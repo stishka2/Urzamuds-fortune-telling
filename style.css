@@ -29,7 +29,6 @@ body {
 input {
     width: 16rem;
     border: none;
-    /*border-bottom: 2px solid #39FF14;*/
     background-color: black;
     color: #39FF14;
     font-family: monospace;
