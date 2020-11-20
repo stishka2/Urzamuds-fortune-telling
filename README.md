@@ -1,3 +1,5 @@
-# text_adventure_game
+# Urzamuds-fortune-telling
+
+
 
 Created by Kristina Stiskaite
