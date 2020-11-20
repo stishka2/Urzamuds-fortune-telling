@@ -1,6 +1,8 @@
+
+
 body {
     margin: 0;
-    background-color: black;
+    background-color: #121212;
     font-family: monospace;
     font-size: 1.7rem;
     color: ghostwhite;
@@ -18,6 +20,7 @@ body {
     text-align: center;
     padding: 1rem;
     animation: fadein 1s;
+    
 }
 
 @keyframes fadein {
@@ -29,12 +32,33 @@ body {
 input {
     width: 16rem;
     border: none;
-    background-color: black;
+    background-color: transparent;
     color: #39FF14;
     font-family: monospace;
     outline: none;
 }
 
 #btn {
-    margin-top: 1rem;
+    margin: 1rem auto 2rem;
+}
+
+@media (max-width: 47.9375em) {
+    body {
+        height: 100vh;
+        font-size: 1.5rem;
+        
+    }
+
+    #text {
+        width: 70%;
+        
+    }
+
+}
+
+/* iPhone 5 only*/
+@media screen and (device-aspect-ratio: 40/71) {
+    body {
+        font-size: 1.375em;
+    }
 }

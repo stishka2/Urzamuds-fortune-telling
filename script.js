@@ -1,6 +1,12 @@
+/** gets div where text will be displayed 
+ * @type {HTMLElement}
+*/
 let text = document.getElementById("text");
+/** gets text input 
+ * @type {HTMLElement}
+*/
 let input = document.getElementById("input");
-
+/** empty variable for current scene. Current scene will be set later in a functions showScene... */
 let currentScene;
 
 
@@ -83,12 +89,7 @@ input.addEventListener("keydown", function(event) {
     }
 });
 
-/** Displays the scenario
- * @param {Object} scenario - contains scenarios
- * @param {Object} scenario.one - scenario of possible scenarios
- * @param {string} scenario.one.text - scenario text, which is displayed on the screen
- * @param {string[]} scenario.one.option1 - scenario options
- */
+/** Displays the scenario and sets the current scene */
 let showSceneOne = function(scenarios) {
     currentScene = "one";
     changeText(scenarios.text)
