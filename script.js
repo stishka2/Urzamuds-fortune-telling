@@ -138,7 +138,7 @@ let changeText = function(words) {
 
 let scenario = {
     one: {
-        text: "Hello and welcome to Urzamud’s one dollar fortune telling! Please pick one of the two cards in front of you. Left, right.",
+        text: "Hello and welcome to Urzamud’s one dollar fortune telling! Please pick one of the three cards in front of you. middle, left, right.",
         option1: ["right"],
         option2: ["left"]
         
@@ -154,7 +154,7 @@ let scenario = {
 
     //pink
     three: {
-        text: "The upside down mirror! The fates smile upon you! The cards say that you will be able to escape your unpleasant end, but only if you make a great sacrifice. To find out what that sacrifice is please pick one more card. Oval, rectangle, spork.",
+        text: "The upside-down mirror! The fates smile upon you! The cards say that you will be able to escape your unpleasant end, but only if you make a great sacrifice. To find out what that sacrifice is please pick one more card. Oval, rectangle, spork.",
         option1: ["oval"],
         option2: ["rectangle"],
         option3: ["spork"],
@@ -162,7 +162,7 @@ let scenario = {
 
     //blue
     four: {
-        text: "You have chosen the hexagonal spider plant. A hexagon has six sides and a spider has eight legs and plants are mostly green. So not only are you going to be pecked to death by six eight legged birds but you’re also going to forget to water your plants! We have one more chance to save you. Pick one more card. Oval, rectangle, spork.",
+        text: "You have chosen the hexagonal spider plant. A hexagon has six sides and a spider has eight legs and plants are mostly green. So not only are you going to be pecked to death by six eight-legged birds but you’re also going to forget to water your plants! We have one more chance to save you. Pick one more card. Oval, rectangle, spork.",
         option1: ["oval"],
         option2: ["rectangle"],
         option3: ["spork"],
@@ -170,7 +170,7 @@ let scenario = {
 
     //grey
     five: {
-        text:"I’m sorry my dear customer, but there is nothing left for you here. You have drawn the snapped tennis racket. Your fate was decided long before you were born. No refunds, doors on the wall. ",
+        text:"I’m sorry my dear customer, but there is nothing left for you here. You have drawn the snapped tennis racket. Your fate was decided long before you were born. No refunds, doors on the wall.",
         
     },
 
@@ -181,17 +181,17 @@ let scenario = {
 
     //rectangle
     seven: {
-        text: "The inverted staircase? The fates demand that you give away all of your current possessions, change your name to Kyle, and become a poet. Thank you for coming to Urzamud's one dollar fortune telling. No refunds.",
+        text: "The inverted staircase? The fates demand that you give away all of your current possessions, change your name to Kyle, and become a poet. Thank you for coming to Urzamud's one dollar fortune-telling. No refunds.",
     },
 
     //spork
     eight: {
-        text: "What a surprise! It’s the flying housecat! Wonderful news! Instead of meeting a horrible end you will instead live out the rest of your days surrounded by small flying furry creatures with daggers for hands! I hope you have had an enlightening experience. No refunds.",
+        text: "What a surprise! It’s the flying housecat! Wonderful news! Instead of meeting a horrible end, you will instead live out the rest of your days surrounded by small flying furry creatures with daggers for hands! I hope you have had an enlightening experience. No refunds.",
     },
 
     //left card
     nine: {
-        text: "In all of my 20 minutes of doing this not once has a customer drawn the poorly taxidermied barracuda. According to this you shall live next to a family of very rich Labradoodles, but they shall not allow you to pet them. Everyone else can pet them, but not you. Please pick another card. Llama, alpaca, iguana.",
+        text: "In all of my 20 minutes of doing this not once has a customer drawn the poorly mounted barracuda. According to this, you shall live next to a family of very rich Labradoodles, but they shall not allow you to pet them. Everyone else can pet them, but not you. Please pick another card. Llama, alpaca, iguana.",
         option1: ["llama"],
         option2: ["alpaca"],
         option3: ["iguana"],
@@ -199,7 +199,7 @@ let scenario = {
 
     //llama
     ten: {
-        text:"Jealous dandelion. The gods deem that you shall have many plant pots but never enough plant soil to put plants in them! In other words, your hopes and dreams will forever be out of your reach because of your addiction to competitive fishing. Please pick another card. Sushi, burger, salad.",
+        text:"Jealous dandelion. The gods deem that you shall have many plant pots but never enough plant-soil! In other words, your hopes and dreams will forever be out of your reach because of your addiction to competitive fishing. Please pick another card. Sushi, burger, salad.",
         option1: ["sushi"],
         option2: ["burger"],
         option3: ["salad"],
@@ -207,7 +207,7 @@ let scenario = {
 
     //alpaca
     eleven: {
-        text: "The twelve roots of insomnia, a very mystical card! Dearest customer your luck is about to make a sharp left turn unless you follow the road signs of love! I see great happiness in your future, but only if you pick another card. Sushi, burger, salad.",
+        text: "The twelve roots of insomnia, a very mystical card! Dearest customer your luck is about to take a sharp left turn unless you follow the road signs of love! I see great happiness in your future, but only if you pick another card. Sushi, burger, salad.",
         option1: ["sushi"],
         option2: ["burger"],
         option3: ["salad"],
@@ -220,13 +220,13 @@ let scenario = {
 
     //sushi
     thirteen: {
-        text: "Forget everything that the cards have told you up until now. Remember that family of labradoodles, turns out that they are actually a family of shiny ghosts who are plotting to steal your family fortune! I suggest you call my cousin Uggith and have them come and take care of these sparkly thieves. Thank you for choosing Urzamud’s for all your fortune needs. No refunds.",
+        text: "Forget everything that the cards have told you up until now. Remember that family of Labradoodles? Turns out that they are actually a family of shiny ghosts who are plotting to steal your family fortune! I suggest you call my cousin Uggith and have them come and take care of these glittery thieves. Thank you for choosing Urzamud’s for all your fortune needs. No refunds.",
         
     },
 
     //burger
     fourteen: {
-        text: "Love is in the air and so is the card Flock of geese shaped like heart. Just like the geese you have been looking for love in all the wrong directions. For better chances at love the cards say to move south, and to call my mother in law for me. Her birthday is tomorrow. She likes fish and my tears. I hope to see you again! No refunds.",
+        text: "Love is in the air and so is the card Flock of geese shaped like a heart. Just like the geese you have been looking for love in all the wrong directions. For better chances at love, the cards say to move south and to call my mother in law for me. Her birthday is tomorrow. She likes fish and my tears. I hope to see you again! No refunds.",
 
     },
 
