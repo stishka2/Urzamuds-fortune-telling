@@ -177,7 +177,7 @@ let changeText = function(words) {
 
 let scenario = {
     one: {
-        text: "Hello and welcome to Urzamud’s one dollar fortune telling! Please pick one of the three cards in front of you. middle, left, right.",
+        text: "Hello and welcome to Urzamud’s one dollar fortune telling! Please pick one of the three cards in front of you. Middle, left, right.",
         option1: ["right"],
         option2: ["left"]
         
