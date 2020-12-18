@@ -76,6 +76,33 @@ function submit() {
         showSceneSeven(scenario.fifteen)
     }
 
+    if(answer === "middle" && currentScene == "one"){
+        showSceneEight(scenario.sixteen)
+    }
+
+    if(answer === "knee" && currentScene == "eight"){
+        showSceneNine(scenario.seventeen)
+    }
+
+    if(answer === "ear" && currentScene == "eight"){
+        showSceneNine(scenario.eighteen)
+    }
+
+    if(answer === "toe" && currentScene == "eight"){
+        showSceneNine(scenario.nineteen)
+    }
+
+    if(answer === "slipper" && currentScene == "nine"){
+        showSceneTen(scenario.twenty)
+    }
+
+    if(answer === "mug" && currentScene == "nine"){
+        showSceneTen(scenario.twentyOne)
+    }
+
+    if(answer === "candle" && currentScene == "nine"){
+        showSceneTen(scenario.twentyTwo)
+    }
     
     input.value = "";
     
@@ -123,8 +150,20 @@ let showSceneSeven = function(scenarios){
     changeText(scenarios.text)
 }
 
+let showSceneEight = function(scenarios){
+    currentScene = "eight";
+    changeText(scenarios.text)
+}
 
+let showSceneNine = function(scenarios){
+    currentScene = "nine";
+    changeText(scenarios.text)
+}
 
+let showSceneTen = function(scenarios){
+    currentScene = "ten";
+    changeText(scenarios.text)
+}
 
 
 /** Displays text in the website 
@@ -234,6 +273,50 @@ let scenario = {
     fifteen: {
         text: "The fan of chainsaws. The cards predict that at least one of your dreams will come true! But not any of the big or important ones. No, those ones are going to be ripped to shreds by the chainsaws of life. At least you’ll be able to use those shreds as a fire starter when you end up living under a bridge. I wish you a pleasant evening. No refunds.",
 
+    },
+
+    //middle card 
+    sixteen: {
+        text: "You have picked the cursed one-eyed doll! A life of great adventure but also great danger is waiting for you! Which will come first, adventure or danger? Let the fates decide! Pick another card. Knee, ear, toe.",
+        option1: "Knee",
+        option2: "Ear",
+        option3: "Toe",
+    },
+
+    //knee
+    seventeen: {
+        text: "The partially buried childhood diary. Some things are better left forgotten, but not for you my dear customer! Before you set out on your great adventure you must first face the danger of puberty! Again! Maybe the cards will tell you how to not make a fool of yourself in front of your junior prom date. Pick another card. Slipper, mug, candle.",
+        option1: "Slipper",
+        option2: "Mug",
+        option3: "Candle",
+    },
+
+    //ear
+    eighteen: {
+        text: "You have flipped over the bag of screaming coins. A sign of misfortune. You shall acquire much wealth towards the late middle-ish part of your life, but only if you give up on your dream of becoming the next great poet named Kyle. Pick one more card. Slipper, mug, candle.",
+        option1: "Slipper",
+        option2: "Mug",
+        option3: "Candle",
+    },
+
+    //toe
+    nineteen: {
+        text: "Look what you’ve done! Do you see this! What am I supposed to do with this information! How dare you pick the stained college rug! Now I have to salt my whole cave! Get out! No refunds!",
+    },
+
+    //slipper 
+    twenty: {
+        text: "This is my favorite card, the inside-out coffee filter. As mysterious as the twilight and as judgmental as your junior prom date. The fourth star to the left tells me that your date is still very angry at you for bringing them a croissant instead of a corsage and is currently hunting you down with the help of six eight-legged birds! I would give you a refund, but I hate birds.",
+    },
+
+    //mug
+    twentyOne: {
+        text: "The poorly constructed Swedish Lagom chair! Sometimes the directions of life are not always clear, or well drawn. That cease and desist letter you received from your brother (the great poet named Kyle) regarding the identity theft was very clear! Unfortunately the fates are being very passive aggressive right now and refuse to tell me your future. No refunds, get out.",
+    },
+
+    //candle
+    twentyTwo: {
+        text: "Fire fire all around who is the best fortune teller in town? Based on my singed hair the fire has declared it to be me! The fire has also declared that your future shall forever be a mystery by setting your “card” on fire. Now I suggest we both leave my poorly constructed paper mache cave before the fire engulfs our souls. No refunds, bye forever!",
     },
 }
 
